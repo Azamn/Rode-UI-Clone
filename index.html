@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RØDE Microphones</title>
+
+    <!-- ----- font awesome -----  -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Manrope&display=swap"
+        rel="stylesheet">
+
+    <!-- ---- tailwind css link ----  -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    sm: '480px',
+                    cs: '600px',
+                    md: '960px',
+                    lg: '1240px',
+                    xl: '1536px',
+                    '2xl': '1536px'
+                },
+                extend: {
+                    colors: {
+                        white: '#ffffff',
+                        black: '#000000'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body class="font-[Manrope]">
+
+    <!-- ------------------ nav-bar -------------  -->
+
+    <!-- ------------ upper nav-bar----------  -->
+    <div class="flex flex-col">
+        <div class="hidden lg:flex justify-between pt-[5px] pl-[13%] pr-[13%]">
+            <div class="flex ">
+                <div class="h-[25px] w-[20px]">
+                    <a href="#"><img draggable="false" class="h-[20px]" src="./images/67347.png" alt="location"></a>
+                </div>
+                <p class="text-gray-500 text-[13px] pl-[1.5px]">EN</p>
+                <div class="h-[20px] w-[30px] mt-[-5px] ml-[-4px]">
+                    <a href="#"><img draggable="false" src="./images/caret-down.webp" alt=""></a>
+                </div>
+            </div>
+            <div class="h-[20px] w-[20px]">
+                <a href="#"><img draggable="false" src="./images/user.png" alt=""></a>
+            </div>
+        </div>
+        <div class="">
+            <div class="border-[0.20px] border-[#eaebec]"></div>
+        </div>
+    </div>
+
+    <!-- -------------- lower nav-bar ---------------  -->
+    <div class="hidden lg:flex justify-between pt-[30px] pb-[20px] pl-[13%] pr-[13%] sticky bg-white top-0 z-[100]">
+        <div class="">
+            <img draggable="false" class="h-[25px]" src="./images/RODE_Logo.svg" alt="RODE_Logo">
+        </div>
+
+        <div class="flex justify-center">
+            <ul class="hidden lg:flex justify-start justify-start gap-[60px] ml-[-20px]">
+                <li
+                    class="text-[14px] font-medium text-black items-center cursor-pointer hover:text-black hover:font-semibold">
+                    PRODUCTS
+                </li>
+                <li
+                    class="text-[14px] font-medium text-black items-center cursor-pointer hover:text-black hover:font-semibold">
+                    USER
+                    GUIDES
+                </li>
+                <li
+                    class="text-[14px] font-medium text-black items-center cursor-pointer hover:text-black hover:font-semibold">
+                    SOLUTIONS
+                </li>
+                <li
+                    class="text-[14px] font-medium text-black items-center cursor-pointer hover:text-black hover:font-semibold">
+                    APPAREL
+                </li>
+                <li
+                    class="text-[14px] font-medium text-black items-center cursor-pointer hover:text-black hover:font-semibold">
+                    SUPPORT
+                </li>
+            </ul>
+        </div>
+
+        <div class="">
+            <img draggable="false" class="h-[30px]" src="./images/search.png" alt="search">
+        </div>
+    </div>
+
+    <!-- ---------- mobile responsive nav-bar -----------------  -->
+    <div class=" flex justify-between justify-center pt-[10px] pb-[20px] pl-[2%] pr-[2%] sticky bg-white top-0 z-[40]">
+        <div class="flex lg:hidden">
+            <div class="flex ">
+                <i class="fa fa-bars text-gray-500" aria-hidden="true"></i>
+            </div>
+            <div class="flex pl-[20px] ">
+                <div class="h-[25px] w-[20px]">
+                    <a href="#"><img draggable="false" class="h-[17px] " src="./images/67347.png" alt="location"></a>
+                </div>
+                <p class="text-gray-800 text-[17px] pl-[1.5px] mt-[-5px]">EN</p>
+                <div class="h-[20px] w-[30px] pl-[2px] mt-[-3px] ml-[-5px]">
+                    <a href="#"><img draggable="false" class="h-[25px]" src="./images/caret-down.webp" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex lg:hidden">
+            <img draggable="false" class="h-[25px] pr-[50px] draggable-false" src="./images/RODE_Logo.svg"
+                alt="RODE_Logo">
+        </div>
+
+        <div class="flex lg:hidden">
+            <img draggable="false" class="h-[25px] " src="./images/search.png" alt="search">
+        </div>
+
+    </div>
+    <!-- ------------------ nav-bar close -------------  -->
+
+    <!-- --------------- hero section -------------  -->
+    <div class="flex flex-col lg:flex-row bg-black w-full justify-between items-center ">
+
+        <div class="hidden lg:flex flex-col">
+            <div class=" flex lg:relative ">
+                <img draggable="false" class="lg:h-[100%] lg:w-[100%] " src="./images/hero-background-image-1.jpg"
+                    alt="">
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:hidden">
+            <div class=" flex lg:relative ">
+                <img draggable="false" class="lg:h-[100%] lg:w-[100%] " src="./images/hero-background-image-2.jpg"
+                    alt="">
+            </div>
+        </div>
+
+
+        <div
+            class="flex lg:absolute justify-center items-center pl-[20px] pr-[20px] lg:pl-[800px] lg:pr-[13%] font-[Sans-serif] ">
+            <div class="flex flex-col justify-center items-center pt-[10px] lg:pt-[-20px] ">
+                <img draggable="false" class="lg:h-12" src="./images/RODECasterProII.svg" alt="">
+                <h1 class="text-white text-[1.4em] pt-[20px]">The Revolution Is Here</h1>
+                <p class="text-[#848c84] text-center text-[1.1em] pt-[20px]">The RØDECaster Pro II is the world's most
+                    powerful all-in-one audio solution for streamers,
+                    podcasters, musicians, and creators. Take your content to the next level.
+                </p>
+                <div class="flex pt-[40px] gap-5 item-center justify-center pb-[20px]">
+                    <p class="text-[#97825e] pt-[5px] font-semibold">LEARN MORE <span class="text-[20px]"> &#62;</span>
+                    </p>
+                    <button
+                        class="px-[22px] py-[7px] bg-[#ad9970] text-[#ffffff] rounded-[40px] font-[600] hover:text-[#ad9970] hover:bg-[#ffffff]">BUY
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- --------------- hero section end-------------  -->
+
+    <!-- --------------- NTH-100 section end-------------  -->
+    <div class="flex flex-col lg:flex-row  w-full justify-between items-center  font-[Inter] ">
+        <div class="hidden lg:flex flex-col">
+            <div class=" flex lg:relative ">
+                <img draggable="false" class="lg:h-[100%] lg:w-[100%] " src="./images/NTH-100.jpg" alt="NTH-100">
+            </div>
+        </div>
+
+        <div
+            class="flex lg:absolute justify-center items-center pl-[20px] pr-[20px] lg:pr-[800px] lg:pl-[13%] font-[Sans-serif] ">
+            <div class="flex flex-col justify-center items-center pt-[10px] lg:pt-[-20px] ">
+                <img draggable="false" class="lg:h-12" src="./images/NTH-100_logo.svg" alt="">
+                <h1 class="text-black text-center text-[1.4em] pt-[20px]">Your Search For The Perfect Headphones Is Over
+                </h1>
+                <p class="text-[#848c84] text-center text-[1.1em] pt-[20px]">Experience sound like never before
+                    with the NTH-100s. Exceptional sonic performance, superior comfort and iconic looks that
+                    inspires creativity.
+                </p>
+                <div class="flex pt-[40px] gap-5 item-center justify-center pb-[20px]">
+                    <p class="text-[#97825e] pt-[5px] font-semibold">LEARN MORE <span class="text-[20px]">
+                            &#62;</span>
+                    </p>
+                    <button
+                        class="px-[22px] py-[7px] bg-[#ad9970] text-[#ffffff] rounded-[40px] font-[600] hover:text-[#ad9970] hover:bg-[#ffffff]">BUY
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------- NTH-100 section end-------------  -->
+
+    <!-- --------------- NTUSB section-------------  -->
+    <div class="flex flex-col lg:flex-row  w-full justify-between items-center font-[Inter]">
+        <div class="hidden lg:flex flex-col">
+            <div class=" flex lg:relative ">
+                <img draggable="false" class="lg:h-[100%] lg:w-[100%] " src="./images/NT-USB.jpg" alt="NTH-100">
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:hidden">
+            <div class=" flex lg:relative ">
+                <img draggable="false" class="lg:h-[100%] lg:w-[100%] " src="./images/rode-nt-usb.jpg" alt="">
+            </div>
+        </div>
+
+        <div
+            class="flex lg:absolute justify-center items-center pl-[20px] pr-[20px] lg:pl-[800px] lg:pr-[13%] font-[Sans-serif] ">
+            <div class="flex flex-col justify-center items-center pt-[10px] lg:pt-[-20px] ">
+                <img draggable="false" class="lg:h-12" src="./images/NT-USB_logo.svg" alt="">
+                <h1 class="text-black text-center text-[1.4em] pt-[20px]">Studio-Quality Recording, Made Simple
+                </h1>
+                <p class="text-[#848c84] text-center text-[1.1em] pt-[20px] ">The NT-USB is a studio-quality USB
+                    condenser microphone that offers impeccable audio, elegant looks and premium features, all in an
+                    easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.
+                </p>
+                <div class="flex pt-[40px] gap-5 item-center justify-center pb-[20px]">
+                    <p class="text-[#97825e] pt-[5px] font-semibold">LEARN MORE <span class="text-[20px]">
+                            &#62;</span>
+                    </p>
+                    <button
+                        class="px-[22px] py-[7px] bg-[#ad9970] text-[#ffffff] rounded-[40px] font-[600] hover:text-[#ad9970] hover:bg-[#ffffff]">BUY
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------- NTUSB section end-------------  -->
+
+    <!-- -------------- Explore The RØDE Range ------------  -->
+    <div
+        class="flex flex-col justify-center items-center pr-[20px] pl-[20px] lg:pr-[13%] lg:pl-[13%]  my-[30px] gap-5 font-[Inter]">
+        <div class="flex justify-center ">
+            <h1 class="text-[#767676] text-center text-[2rem] font-bold">Explore The RØDE Range</h1>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-7 ">
+
+            <div class="flex justify-center items-center">
+                <div class="relative">
+                    <img draggable="false" src="./images/microphones-module.png" alt="microphones-module" class="">
+                </div>
+                <h1 class="absolute text-white text-3xl lg:text-7xl font-bold">MICROPHONES</h1>
+            </div>
+
+            <div class="flex justify-center items-center">
+                <div class="relative">
+                    <img draggable="false" src="./images/interfaces-module.jpg" alt="interfaces-module" class="">
+                </div>
+                <h1 class="absolute text-white text-3xl lg:text-7xl font-bold">INTERFACES AND MIXERS</h1>
+            </div>
+
+            <div class="flex justify-center items-center">
+                <div class="relative">
+                    <img draggable="false" src="./images/software-module.png" alt="software-module" class="">
+                </div>
+                <h1 class="absolute text-white text-3xl lg:text-7xl font-bold">SOFTWARE</h1>
+            </div>
+
+            <div class="flex justify-center items-center">
+                <div class="relative">
+                    <img draggable="false" src="./images/accessories-module.png" alt="accessories-module" class="">
+                </div>
+                <h1 class="absolute text-white text-3xl lg:text-[5rem] font-bold">ACCESORIES</h1>
+            </div>
+
+        </div>
+
+        <div class="flex justify-center">
+            <a href="#" class="text-[#ad9970] text-center text-3xl font-bold">Latest From The RØDE Blog</a>
+        </div>
+
+    </div>
+    <!-- -------------- Explore The RØDE Range End------------  -->
+
+    <!-- -------------- Card section ------------  -->
+    <div class="bg-[#f8f9fa] pr-[15%] pl-[15%] lg:pr-[13%] lg:pl-[13%] pt-[40px] pb-[50px] font-[Inter]">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 ">
+            <div class="flex bg-[#ffffff] flex-col items-center justify-center pb-[30px]">
+                <h1 class="text-[26px] font-semibold text-center pb-[30px]">XLR vs USB Microphones: Which is Best for
+                    You?</h1>
+                <img draggable="false" src="./images/xlr-usb.jpg" alt="xlr-usb" class="">
+                <p class="mt-10 text-center mb-10">We explore the differences between XLR and USB microphones, the
+                    advantages of each and which
+                    type is best suited to your needs.</p>
+                <button
+                    class="border border-[#ad9970] font-bold text-white lg:text-sm bg-[#AE9970] px-[22px] py-2 rounded-full hover:bg-white hover:text-[#AE9970]">
+                    LEARN MORE
+                </button>
+            </div>
+
+            <div class="flex bg-[#ffffff] flex-col items-center justify-center pb-[30px]">
+                <h1 class="text-[26px] font-semibold text-center">The Difference Between Large-Diaphragm and
+                    Small-Diaphragm Condenser Microphones</h1>
+                <img draggable="false" src="./images/condensor-mocrophones.jpeg" alt="xlr-usb" class="">
+                <p class="mt-10 text-center mb-10">We explore the difference between large- and small-diaphragm
+                    condenser microphones, and what each is best used for.</p>
+                <button
+                    class="border border-[#ad9970] font-bold text-white lg:text-sm bg-[#AE9970] px-[22px] py-2 rounded-full hover:bg-white hover:text-[#AE9970]">
+                    LEARN MORE
+                </button>
+            </div>
+
+            <div class="flex bg-[#ffffff] flex-col items-center justify-center pb-[30px]">
+                <h1 class="text-[26px] font-semibold text-center">What is a Condenser Microphone and When to Use One
+                </h1>
+                <img draggable="false" src="./images/condensor-mocrophones_1.jpeg" alt="xlr-usb" class="">
+                <p class="mt-10 text-center mb-10">Learn more about the different types of condenser mics, how they work
+                    and the best applications for using them.</p>
+                <button
+                    class="border border-[#ad9970] font-bold text-white lg:text-sm bg-[#AE9970] px-[22px] py-2 rounded-full hover:bg-white hover:text-[#AE9970]">
+                    LEARN MORE
+                </button>
+            </div>
+
+            <div class="flex bg-[#ffffff] flex-col items-center justify-center pb-[30px]">
+                <h1 class="text-[26px] font-semibold text-center">Firmware Version 1.0.7 for the RØDECaster Pro II is
+                    Available Now</h1>
+                <img draggable="false" src="./images/rode-rodecaster.jpg" alt="xlr-usb" class="">
+                <p class="mt-10 text-center mb-10">Firmware version 1.0.7 includes key feature additions, such as custom
+                    routing for USB and Bluetooth outputs, and more.</p>
+                <button
+                    class="border border-[#ad9970] font-bold text-white lg:text-sm bg-[#AE9970] px-[22px] py-2 rounded-full hover:bg-white hover:text-[#AE9970]">
+                    LEARN MORE
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <!-- -------------- Card section close------------  -->
+
+    <!-- ----------------- footer ----------------  -->
+    <div class="flex flex-col mt-[100px] font-[sans-serif]">
+
+        <div class="">
+            <div class="border-[0.1px] border-[#e7e8e9]"></div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row pr-[13%] pl-[13%] lg:pr-[13%] lg:pl-[13%] mt-14 mb-10 gap-10 justify-between items-center">
+
+            <div class="">
+                <img draggable="false" src="./images/RODE_logo_142x85_desktop_light_mode.svg" alt="" class="">
+            </div>
+
+            <div class="hidden lg:flex gap-14">
+                <div class="flex flex-col">
+                    <h1 class="text-bold text-xl text-black">Products</h1>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Microphones</p>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Headphones</p>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Accessories</p>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Software</p>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Apparel</p>
+                </div>
+
+                <div class="flex flex-col">
+                    <h1 class="text-bold text-xl text-black">Support</h1>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Contact RODE </p>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Service Center</p>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Warranty</p>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Where to Buy</p>
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="text-bold text-xl text-black">Company</h1>
+                    <p class="mt-2 text-gray-500 hover:text-black ">About Rode</p>
+                    <p class="mt-2 text-gray-500 hover:text-black ">News and Info</p>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Job Opportunities</p>
+                    <h1 class="text-bold text-xl text-black">Account</h1>
+                    <p class="mt-2 text-gray-500 hover:text-black ">Manage your account</p>
+                    <p class="mt-2 text-gray-500 hover:text-black ">creat Account</p>
+                </div>
+            </div>
+
+            <!-- ------- mobile responsive -----------  -->
+            <div class="w-full lg:hidden text-xl mx-4 flex flex-col">
+                <div class="flex flex-row pt-2 pb-2 border-t-2 justify-between">
+                    <p>Products</p>
+                    <p class="text-4xl">+</p>
+                </div>
+                <div class="flex flex-row pt-2 pb-2 border-t-2 justify-between">
+                    <p>Support</p>
+                    <p class="text-4xl">+</p>
+                </div>
+                <div class="flex flex-row pt-2 pb-2 border-t-2 justify-between">
+                    <p>Company</p>
+                    <p class="text-4xl">+</p>
+                </div>
+                <div class="flex flex-row pt-2 pb-2 border-t-2 border-b-2 justify-between">
+                    <p>Account</p>
+                    <p class="text-4xl">+</p>
+                </div>
+            </div>
+            <!-- ------- mobile responsive end-----------  -->
+
+            <div class="flex flex-col  ">
+                <h1 class="lg:text-right text-center lg:text-3xl text-2xl text-bold">Subscribe to our latest <br>
+                    news
+                    and offers</h1>
+                <div>
+                    <button
+                        class=" mt-4 mb-8 text-bold text-white lg:text-sm bg-[#ad9970] px-6 py-2.5 rounded-full hover:bg-white hover:text-yellow ml-12 lg:ml-48">
+                        <a class="" href="#">Sign Up</a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="pr-[13%] pl-[13%]">
+            <div class="border-[0.1px] border-[#e7e8e9]"></div>
+        </div>
+
+        <div class="flex flex-col-reverse items-center mt-5 mb-10 gap-4 lg:flex-row justify-between pr-[13%] pl-[13%]">
+            
+            <p class="text-[16px] ">© 2022 RØDE All Rights Reserved.</p>
+            <p class="font-light text-[14px] font-[Inter,sans-serif]">Privacy Policy   |   Terms & Conditions</p>
+            <div>
+                <i class="fa-brands text-xl text-[#AD9970] mr-4 fa-facebook"></i>
+                <i class="fa-brands text-xl text-[#AD9970] mr-4 fa-twitter"></i>
+                <i class="fa-brands text-xl text-[#AD9970] mr-4 fa-instagram"></i>
+                <i class="fa-brands text-xl text-[#AD9970] mr-4 fa-youtube"></i>
+                <i class="fa-brands text-xl text-[#AD9970] mr-4 fa-tiktok"></i>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
